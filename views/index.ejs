@@ -1,0 +1,35 @@
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title></title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <h1>Wolves Dashboard</h1>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Color</th>
+      <th>Size</th>
+      <th>Action</th>
+    </tr>
+    <% for(i in wolves){ %>
+    <tr>
+      <td>
+        <a href="/wolves/<%= wolves[i].id %>"><%= wolves[i].name %></a>
+      </td>
+      <td>
+      <%= wolves[i].color %>
+      </td>
+      <td>
+      <%= wolves[i].size %>
+      </td>
+      <td>
+        <a href="/wolves/<%= wolves[i].id %>/edit">Edit</a>
+        <a href="/wolves/<%= wolves[i].id %>/destroy">Delete</a>
+      </td>
+    </tr>
+    <% } %>
+</body>
+</html>

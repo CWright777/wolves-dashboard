@@ -1,0 +1,12 @@
+{
+  "name": "wolf_dashboard",
+  "description": "Wolves",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "ejs": "^2.3.3",
+    "express": "^4.13.3",
+    "mongoose": "*",
+    "mongoose-validator": "*"
+  }
+}
+
